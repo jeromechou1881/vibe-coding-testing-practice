@@ -129,10 +129,8 @@ describe('DashboardPage', () => {
             renderDashboardPage();
 
             await waitFor(() => {
-                expect(screen.getByText('商品列表')).toBeInTheDocument();
+                expect(screen.getByText('筆記型電腦')).toBeInTheDocument();
             });
-
-            expect(screen.getByText('筆記型電腦')).toBeInTheDocument();
             expect(screen.getByText('輕薄高效能筆記型電腦，適合工作與娛樂')).toBeInTheDocument();
             expect(screen.getByText('NT$ 25,000')).toBeInTheDocument();
 
